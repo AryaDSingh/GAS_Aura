@@ -20,4 +20,6 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnyWhere, Category = "Combat")
+	TObjectPtr<USkeletalMeshComponent> Weapon;
 };
